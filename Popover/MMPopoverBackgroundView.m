@@ -32,6 +32,7 @@
 
 // основание стрелки (arrow base)
 + (CGFloat)arrowBase {
+    
     // возвращаем ширину изображения
     return [UIImage imageNamed:@"strelka4.png"].size.width;
 }
