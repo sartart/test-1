@@ -28,7 +28,7 @@
 {
     // Drawing code
 }
-*/
+*////
 
 // основание стрелки (arrow base)
 + (CGFloat)arrowBase {
