@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="MMViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D78-67-eLM">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="popover">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openPopover:" destination="2" eventType="touchUpInside" id="w2b-jI-yog"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D78-67-eLM" firstAttribute="centerX" secondItem="5" secondAttribute="centerX" type="default" id="UkO-xN-0tr"/>
+                            <constraint firstItem="D78-67-eLM" firstAttribute="top" secondItem="5" secondAttribute="top" constant="480" id="ehF-H0-HWX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="D78-67-eLM" id="hJq-6o-fKn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="-261"/>
+        </scene>
+        <!--Miz Storiboard View Controller - 1-->
+        <scene sceneID="Cfn-k1-gGJ">
+            <objects>
+                <viewController storyboardIdentifier="izStoriboard" id="Kys-x4-ZAD" customClass="MMizStoriboardViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lf5-w0-n94">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IsU-M1-Lrb">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFb-zb-DlW">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OKJ-2H-Nka" kind="push" id="Scc-Kk-IRi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wFb-zb-DlW" firstAttribute="centerX" secondItem="IsU-M1-Lrb" secondAttribute="centerX" type="default" id="DqD-fs-oxS"/>
+                            <constraint firstItem="IsU-M1-Lrb" firstAttribute="centerX" secondItem="Lf5-w0-n94" secondAttribute="centerX" type="default" id="WRg-yc-CIE"/>
+                            <constraint firstItem="IsU-M1-Lrb" firstAttribute="top" secondItem="Lf5-w0-n94" secondAttribute="top" constant="469" id="k4r-h3-OFi"/>
+                            <constraint firstAttribute="bottom" secondItem="wFb-zb-DlW" secondAttribute="bottom" constant="292" id="vhg-fV-dAy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="1" id="S77-hi-siW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kyx-C5-Oj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1586" y="-1629"/>
+        </scene>
+        <!--View Controller - 2-->
+        <scene sceneID="rCJ-HN-I7J">
+            <objects>
+                <viewController id="OKJ-2H-Nka" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HKO-Vw-GgK">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjQ-H3-ewk">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SjQ-H3-ewk" firstAttribute="top" secondItem="HKO-Vw-GgK" secondAttribute="top" constant="469" id="O3C-E1-0pG"/>
+                            <constraint firstItem="SjQ-H3-ewk" firstAttribute="centerX" secondItem="HKO-Vw-GgK" secondAttribute="centerX" type="default" id="vvf-0T-0O7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="2" id="3og-xp-L88"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="So0-kT-4gj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2569" y="-1629"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="MMViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="openPopover:"/>
+                <relationship kind="outlet" name="button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="popover" candidateClass="UIPopoverController"/>
+            </relationships>
+        </class>
+        <class className="MMizStoriboardViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMizStoriboardViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
